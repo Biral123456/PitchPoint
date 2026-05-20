@@ -1,0 +1,876 @@
+/*General Styles*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-solid{
+    color: navy;
+    margin-right: 0.2rem;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+body, p, span, label, input, select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+/*Heading Footer Styles*/
+
+.navbar{
+    top: 0;
+    position: sticky;
+    color: white;
+    padding: 0.7rem;
+    background: black;
+    z-index: 3;
+    box-shadow: 0 0.5px 10px #999;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar #navurl{
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.1rem;
+
+}
+
+.navbar p a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar p{
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1rem;
+    margin-left: 4.7rem;
+    margin-right: 1.9rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 0.8rem;
+    margin: 0.7rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.navbar .container .nav-contain{
+    margin: auto;
+}
+
+.navbar ul li a:hover, 
+.navbar ul li a.current{
+    background: #444;
+    color: white;
+    border: solid 1px #999;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .border1{
+    border: solid 0.1px #999;
+    border-radius: 1rem;
+    padding: 0;
+    height: 35px;
+    margin-top: 0.8rem;
+}
+
+.navbar .user-register{
+    background: rgb(1, 102, 1);
+    padding: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    border: solid 0.5px #999;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    margin: 2rem;
+}
+
+.navbar .user-register:hover{
+    background: rgb(4, 160, 4);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .usreg2{
+    margin-right: 0;
+}
+
+.container ul li span:last-child:hover{
+    background: rgb(86, 86, 197);
+}
+
+/*Hero Section*/
+
+#showcase{
+    background: url(img/a-stadium-filled-with-excited-fans-a-football-field-in-the-foreground-background-with-empty-space-for-text-photo.jpg) no-repeat center/cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+.showcase-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    /*overlay color*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.titletxt{
+    margin: 3rem;
+}
+
+.title{
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+}
+
+.title img{
+    height: 7rem;
+}
+
+.introduction{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.showcase-content ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+}
+
+.organize{
+    background: rgb(5, 5, 126);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    margin: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.organize:hover{
+    background: rgb(17, 17, 163);
+}
+
+.browse{
+    background: rgb(5, 5, 126);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    margin: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.browse:hover{
+     background: rgb(17, 17, 163);
+}
+
+/*Problem and Features Section*/
+
+#problems{
+    background-color: #999;
+    color: white;
+    border-right: solid 0.5px #666;
+    width: 50%;
+}
+
+#features{
+    background-color: rgb(5, 136, 5);
+    color: white;
+    width: 50%;
+}
+
+.prof{
+    padding: 1rem;
+}
+
+.prof p{
+    margin: 1rem;
+}
+
+.prof h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#problems h3{
+    background: white;
+    color: #999;
+    padding: 0.5rem;
+    width: 11rem;
+}
+
+#features h3{
+    background: white;
+    color: rgb(5, 136, 5);
+    padding: 0.5rem;
+    width: 11rem;
+}
+
+.displayalign{
+    display: flex;
+    flex-direction: row;
+}
+
+/*How it works Section*/
+
+.services{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+}
+
+.services .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+}
+
+.services .container h2{
+    display: block;      
+    width: 100%;         
+    text-align: center;  
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.services .service-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.services .service-item{
+    max-width: 300px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 5px 5px 10px #b8b7b7, -5px -5px 10px #b8b7b7;
+}
+
+.services .service-item:hover{
+    transform: translatey(-12px);
+    transition: all 0.5s ease-in-out;
+}
+
+.services .service-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services .service-item h3{
+    text-align: center;
+}
+
+/*Footer Styles*/
+
+footer{
+    background: rgb(5, 5, 5);
+    color: white;
+    padding: 0;
+    margin-bottom: 0;
+    height: 19rem;
+}
+
+#main-footer .container h3, #main-footer .container h2{
+    text-transform: uppercase;
+    color: green;
+}
+
+#main-footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem
+}
+
+#main-footer .container  div img{
+    height: 5rem;
+    width: 8rem;
+    margin: 0.5rem;
+}
+
+#main-footer .container .support p{
+    margin: 1rem;
+    margin-left: 0;
+}
+
+#main-footer .container .fix ul{
+    list-style: none;
+}
+
+#main-footer .container .fix ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#main-footer .container .fix ul li a:hover{
+    color: blue;
+    transition: all 0.5s ease-in-out;
+}
+
+#main-footer .container .fix ul li{
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 0;
+}
+
+#main-footer .fix2{
+    background: #555;
+    padding: 0.4rem;
+    display: grid;
+    grid-column: 1 / span 4;
+}
+
+#main-footer .fix2 p{
+    text-align: center;
+    color: white;
+}
+
+#main-footer .container .onemore a{
+    background: navy;
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+}
+
+#main-footer .container .onemore p{
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+#main-footer .container form input{
+    width: 13rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/*Match Setup Styles*/
+
+#matchsetupbody{
+    background: url('img/stadium-dawn-glory-stockcake.webp') no-repeat center center/cover;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+
+#matchsetupbody .setup{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    min-height: 100vh;       
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+}
+
+.everything h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.everything p{
+    text-align: center;
+    color: #555;
+}
+
+.everything{
+    background: white;
+    width: 35rem;            
+    height: auto;            
+    min-height: 40rem;       
+    padding: 2.5rem;         
+    border-radius: 10px;     
+    margin: 2rem 0;
+}
+
+.everything .row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.everything .row ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.everything .row ul li a{
+    text-decoration: none;   
+    background: navy;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 1rem;
+    border: solid 1px rgb(10, 10, 179);
+    border-radius: 0.5rem;
+}
+
+.everything .row ul li a:hover{
+    background: rgb(28, 28, 247);
+    transition: all 0.5s ease-in-out;
+}
+
+label:first-child{
+    font-weight: bold;
+}
+
+.everything ul{
+    list-style: none;
+}
+
+.everything.div2 ul{
+    display: flex;            /* Enables flexbox */
+    justify-content: center;   /* Centers the button horizontally */
+    list-style: none;         /* Removes the bullet point dot */
+    padding: 0;               /* Removes default browser padding */
+    margin-top: 1.5rem;
+}
+
+.everything .div2 ul li button{
+    background: rgb(5, 136, 5);
+    color: white;
+    padding: 0.8rem 2rem;     /* Makes the button wider and taller */
+    text-decoration: none;
+    border: solid 1px rgb(5, 136, 5);
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.everything .div2 ul li button:hover{
+    background: rgb(9, 187, 9);  
+    transition: all 0.5s ease-in-out;
+}
+
+.div2 {
+    text-align: center; /* This centers inline elements like your link */
+    width: 100%;
+}
+
+.div2 ul {
+    padding: 0;
+    display: inline-block; /* Makes the list behave like a single unit */
+}
+
+
+/* --- GLOBAL THEME & SHARED STYLES --- */
+.dark-theme {
+    background-color: #0a0a0a;
+    color: white;
+    min-height: 100vh;
+}
+
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.section-title {
+    color: rgb(5, 136, 5); /* Pitch Green */
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* --- TURFS PAGE (turfs.html) --- */
+.page-title {
+    background: #111;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.filter-bar {
+    background: #1a1a1a;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+.filter-bar select {
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.turf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.turf-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.turf-card:hover { 
+    transform: translateY(-10px);
+    border-color: rgb(5, 136, 5);
+}
+
+.turf-card img { width: 100%; height: 200px; object-fit: cover; }
+
+/* --- TOURNAMENTS PAGE (tournaments.html) --- */
+.prize-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffd700; /* Gold */
+    color: black;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.slots {
+    margin: 1rem 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* --- BOOKING & PAYMENT PAGE (booking.html) --- */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.summary-card {
+    background: #1a1a1a;
+    width: 400px;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border-left: 6px solid navy; /* Original Navy Blue */
+}
+
+.summary-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.summary-item label {
+    display: block;
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.summary-item span {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.booking-form-box {
+    background: white;
+    width: 500px;
+    padding: 3rem;
+    border-radius: 15px;
+    color: #333;
+}
+
+.payment-options {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.split-calculator {
+    background: rgba(5, 136, 5, 0.1);
+    border: 1px dashed rgb(5, 136, 5);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.btn-confirm-booking {
+    width: 100%;
+    background: rgb(5, 136, 5);
+    color: white;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- DASHBOARD PAGE (dashboard.html) --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.dash-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid #333;
+}
+
+.progress-section {
+    margin: 1.5rem 0;
+}
+
+.progress-bar-bg {
+    background: #333;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    background: rgb(5, 136, 5);
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(5, 136, 5, 0.5);
+}
+
+.status-tag {
+    background: navy;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* --- TURFS PAGE 2-COLUMN LAYOUT --- */
+
+/* Force Exactly 2 Columns */
+.turf-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* This creates the 2 columns */
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card Styling for 2-column view */
+.turf-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.turf-card img {
+    width: 100%;
+    height: 250px; /* Increased height for better look in 2 columns */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+    color: white;
+}
+
+/* Responsive: Switch to 1 column on small screens so it's not cramped */
+@media (max-width: 800px) {
+    .turf-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Modify or add these to your existing baseline style.css rule */
+.dashboard-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main Footer Wrapping Container */
+#main-footer {
+    background-color: #000000; /* Ensures the pitch black background covers the entire area */
+    width: 100%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure copyright bar locks perfectly at the very bottom */
+.copyright-bar {
+    background-color: #333333; /* Your gray background stripe */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 2rem; /* Clean buffer below the column links */
+    border-top: 1px solid #222;
+}
+
+#main-footer .footer-container a[href*="join"] {
+    margin-bottom: 2rem; /* Forces space directly beneath the button */
+    display: inline-block; /* Ensures the margin applies correctly */
+}
+
+.fix2 {
+    background-color: #333333; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    width: 100%;
+    /* Force a massive gap right above the gray bar */
+    margin-top: 2rem !important; 
+    border-top: 1px solid #222;
+}
+
+/* Force the browser window to recognize full vertical height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Turn the body into a flexbox column stretching to full viewport height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* CRITICAL: Force your main content area to grow and soak up all empty space!
+   Make sure your tournament content is wrapped in a tag like <main> or a main content class.
+*/
+main, 
+.main-content, 
+#main-content {
+    flex: 1 0 auto; /* This pushes the footer down to the absolute bottom edge */
+}
+
+/* Keep the footer safely locked at its natural height down at the base */
+#main-footer {
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   GUARANTEED ABSOLUTE VERTICAL BASE FORCE
+   ========================================================================== */
+
+/* 1. Clear out window limitations safely */
+html {
+    height: 100% !important;
+}
+
+body {
+    position: relative !important;
+    min-height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    /* Create an explicit blank padding zone at the bottom of your webpage 
+       so the content never hides underneath the fixed footer block. */
+    padding-bottom: 350px !important; 
+    box-sizing: border-box !important;
+}
+
+/* 2. Lock the entire footer to the exact absolute bottom boundary edge */
+#main-footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    
+    /* Make sure its vertical scale perfectly occupies the blank zone we cleared */
+    height: auto !important; 
+    z-index: 999 !important;
+}
+ /* ==========================================================================
+   PERFECT STICKY FOOTER GRID FORCING
+   ========================================================================== */
+
+/* 1. Setup the document container window bounds */
+html {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Turn the entire body layout into a 3-row grid tracking top-to-bottom */
+body {
+    min-height: 100% !important;
+    display: grid !important;
+    grid-template-rows: auto 1fr auto !important; /* Row 1: Navbar, Row 2: Content (Stretches), Row 3: Footer */
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* 3. Remove any absolute or fixed positions we tried earlier */
+#main-footer {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: auto !important; /* Secure push downward */
+}
+
+/* ==========================================================================
+   EMERGENCY HERO TEXT WRAPPING RESET 
+   ========================================================================== */
+.showcase-content,
+.showcase-content h1,
+.showcase-content .titletxt,
+#showcase h1 {
+    white-space: normal !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+}

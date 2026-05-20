@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="wide.css" media="screen and (min-width: 769px)">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | PitchPoint</title>
+</head>
+<body class="dark-theme">
+    
+    <nav class="navbar">
+      <div class="container">
+        <div id="navlogo">
+          <a href="index.html"><img id="navurl" src="img/taskbar url.jpg"></a>
+        </div>
+        <div class="nav-content">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="turfs.html">Turfs</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="dashboard.html" class="current">Dashboard</a></li>
+          </ul>
+        </div>
+        <p><a href="_blank" class="user-register">Login</a></p>
+        <p class="border1"></p>
+        <p><a href="_blank" class="user-register usreg2">Sign Up</a></p>
+      </div>
+    </nav>
+
+    <div class="container py-3" style="display: block;">
+        <h1 style="color: white; margin-bottom: 2rem;">User Dashboard</h1>
+        
+        <div class="dashboard-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+            
+            <div class="dash-card main-match" style="background: #1a1a1a; border-radius: 15px; padding: 2rem; border: 1px solid #333; color: white;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h2 style="color: rgb(5, 136, 5);">Upcoming Match</h2>
+                    <span style="background: navy; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Confirmed</span>
+                </div>
+                
+                <div class="match-details" style="margin-bottom: 2rem;">
+                    <h3 id="dash-match-name" style="font-size: 1.8rem; margin-bottom: 0.5rem;">Sunday Funday</h3>
+                    <p style="margin: 0.5rem 0;"><i class="fa-solid fa-calendar"></i> <span id="dash-match-datetime">May 25, 2026 | 08:00 PM</span></p>
+                    <p style="margin: 0.5rem 0;"><i class="fa-solid fa-location-dot"></i> <span id="dash-turf-name">Pacific Sports Ground</span></p>
+                    <p style="margin: 0.5rem 0;"><i class="fa-solid fa-trophy"></i> Match Type: <span id="dash-match-type">Tournament</span></p>
+                </div>
+
+                <div class="progress-section" style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                        <span>Players Joined</span>
+                        <span id="dash-player-ratio">8 / 12</span>
+                    </div>
+                    <div style="background: #333; height: 12px; border-radius: 10px; overflow: hidden;">
+                        <div id="dash-progress-bar" style="background: rgb(5, 136, 5); width: 66%; height: 100%; border-radius: 10px;"></div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-primary" style="flex: 1; background: rgb(5, 136, 5); border: none; padding: 0.8rem; border-radius: 8px; color: white; font-weight: bold; cursor: pointer;">Invite More Players</button>
+                    <button class="btn btn-secondary" style="flex: 1; background: #333; border: 1px solid #444; padding: 0.8rem; border-radius: 8px; color: white; cursor: pointer;">Cancel Match</button>
+                </div>
+            </div>
+
+            <div class="dash-sidebar" style="display: flex; flex-direction: column; gap: 2rem;">
+                
+                <div class="dash-card" style="background: #1a1a1a; border-radius: 15px; padding: 1.5rem; border: 1px solid #333; color: white;">
+                    <h3 style="color: rgb(5, 136, 5); margin-bottom: 1rem;">Payment Status</h3>
+                    <p style="color: #00ff00; font-weight: bold; margin-bottom: 1rem;">
+                        <i class="fa-solid fa-circle-check"></i> <span id="dash-payment-status">500 BDT Paid</span>
+                    </p>
+                    <button style="width: 100%; background: transparent; border: 1px solid #555; color: white; padding: 0.5rem; border-radius: 5px; cursor: pointer;">View Receipt</button>
+                </div>
+
+                <div class="dash-card" style="background: #1a1a1a; border-radius: 15px; padding: 1.5rem; border: 1px solid #333; color: white;">
+                    <h3 style="color: rgb(5, 136, 5); margin-bottom: 1rem;">Tournament Info</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Teams Joined: 6/16</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Prize Pool: 50,000 BDT</p>
+                    <p style="font-size: 0.9rem; color: #888;">Starts in 12 days</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <div>
+          <img src="img/691861687_1547938279996005_2950235680016331440_n.jpg" alt="PitchPoint">
+          <p>Organize Football Matches Without the Chaos</p>
+        </div>
+        <div class="support">
+         <h3>Support</h3>
+          <p><i class="fa-solid fa-envelope"></i> support@pitchpoint.com</p>
+          <p><i class="fa-solid fa-phone"></i> +880 1302-787438</p>
+          <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+        </div>
+        <div class="fix">
+          <h3>Site Links</h3>
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="turfs.html">Turfs</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="onemore">
+          <h2>Become a Turf Partner</h2>
+          <p>List your turf on PitchPoint, receive more bookings, and manage your availability easily.</p>
+          <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+      </div>
+      <div class="fix2">
+          <p>Copyright &copy; 2026 PitchPoint. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            
+            // Extract parameters
+            const matchName = params.get('matchname');
+            const matchType = params.get('type');
+            const privacy = params.get('privacy');
+            const turfName = params.get('turfName');
+            const maxPlayers = params.get('count');
+            const bookingDate = params.get('date'); 
+            const bookingTime = params.get('time');
+            const paymentMethod = params.get('pay-method');
+            const turfPrice = params.get('price'); 
+
+            const dashboardGrid = document.querySelector('.dashboard-grid');
+            const pageHeading = document.querySelector('h1');
+
+            if (dashboardGrid) {
+                // Apply global side-spacing constraints so layout never touches absolute display frame borders
+                dashboardGrid.style.maxWidth = '1200px';
+                dashboardGrid.style.margin = '0 auto';
+                dashboardGrid.style.padding = '0 1.5rem';
+                dashboardGrid.style.width = '100%';
+
+                // --- DIRECT ACCESS / NO BOOKING SAFE STATE ---
+                if (!matchName && !bookingDate) {
+                    dashboardGrid.style.display = 'block'; // Clear columns for a clean center box layout
+                    
+                    // Keep the main heading clean, centered, and padded without breaking card alignments
+                    if (pageHeading) {
+                        pageHeading.style.textAlign = 'center';
+                        pageHeading.style.paddingLeft = '0';
+                        pageHeading.style.margin = '2rem auto';
+                    }
+
+                    dashboardGrid.innerHTML = `
+                        <div class="dash-card" style="background: #1a1a1a; border-radius: 15px; padding: 3rem 2rem; border: 1px solid #333; text-align: center; color: white; max-width: 600px; margin: 2rem auto;">
+                            <div style="font-size: 4rem; color: #555; margin-bottom: 1.5rem;">
+                                <i class="fa-solid fa-calendar-xmark" style="color: #555;"></i>
+                            </div>
+                            <h2 style="margin-bottom: 1rem;">No Upcoming Matches</h2>
+                            <p style="color: #aaa; margin-bottom: 2rem; font-size: 1rem; line-height: 1.5;">
+                                You don't have any scheduled football sessions or tournament matches active at the moment. 
+                                Organize a team sheet or reserve a slot to get started!
+                            </p>
+                            <a href="matchsetup.html" class="btn btn-primary" style="display: inline-block; background: rgb(5, 136, 5); text-decoration: none; border: none; padding: 0.8rem 2rem; border-radius: 8px; color: white; font-weight: bold; cursor: pointer;">
+                                Create Your Match
+                            </a>
+                        </div>
+                    `;
+                    return; 
+                }
+            }
+
+            // --- DATA POPULATION STATE (Runs only if a booking exists) ---
+            
+            // Assign responsive hook class to header title safely
+            if (pageHeading) {
+                pageHeading.className = 'active-dash-title';
+                pageHeading.style.maxWidth = '1200px';
+                pageHeading.style.margin = '0 auto 2rem auto';
+            }
+
+            // 1. Update basic match text fields
+            if (matchName) document.getElementById('dash-match-name').textContent = decodeURIComponent(matchName);
+            if (matchType) document.getElementById('dash-match-type').textContent = decodeURIComponent(matchType);
+            if (turfName) document.getElementById('dash-turf-name').textContent = decodeURIComponent(turfName);
+            
+            // 2. Render Date & Time Slot cleanly
+            if (bookingDate && bookingTime) {
+                document.getElementById('dash-match-datetime').textContent = `${bookingDate} | ${decodeURIComponent(bookingTime)}`;
+            }
+
+            // 3. Dynamic Days Remaining Calculator
+            let daysLeftText = "Date not set";
+            if (bookingDate) {
+                const today = new Date("2026-05-20"); 
+                const matchDate = new Date(bookingDate);
+                
+                const timeDiff = matchDate.getTime() - today.getTime();
+                const daysRemaining = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                
+                if (daysRemaining > 0) {
+                    daysLeftText = `Starts in ${daysRemaining} days`;
+                } else if (daysRemaining === 0) {
+                    daysLeftText = "Match is TODAY!";
+                } else {
+                    daysLeftText = "Match has passed";
+                }
+            }
+
+            // 4. Responsive Sidebar Layout (Friendly vs Tournament Panel)
+            const typeIcon = document.querySelector('.fa-trophy');
+            const sidebarCards = document.querySelectorAll('.dash-sidebar .dash-card');
+            const tournamentCard = sidebarCards[1]; 
+
+            if (matchType && matchType.toLowerCase() === 'friendly') {
+                if (typeIcon) {
+                    typeIcon.className = 'fa-solid fa-soccer-ball';
+                }
+                
+                if (tournamentCard) {
+                    const privacyStatus = privacy ? decodeURIComponent(privacy) : 'Public';
+                    tournamentCard.innerHTML = `
+                        <h3 style="color: rgb(5, 136, 5); margin-bottom: 1rem;">Match Settings</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Privacy: <strong>${privacyStatus}</strong></p>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Status: Open for Friends</p>
+                        <p style="font-size: 0.9rem; color: #888;">${daysLeftText}</p>
+                    `;
+                }
+            } else {
+                if (tournamentCard) {
+                    tournamentCard.innerHTML = `
+                        <h3 style="color: rgb(5, 136, 5); margin-bottom: 1rem;">Tournament Info</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.8rem;"><i class="fa-solid fa-users" style="color:rgb(5,136,5);"></i> Teams Joined: <strong style="color: white;">1 / 16</strong></p>
+                        
+                        <div style="margin-top: 1rem; border-top: 1px solid #333; padding-top: 1rem;">
+                            <label style="font-size: 0.8rem; color: #aaa; display: block; margin-bottom: 0.4rem;">Set Tournament Prize Pool (Host)</label>
+                            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                                <select id="host-prize-selector" style="background: #222; color: white; border: 1px solid #444; padding: 0.4rem; border-radius: 5px; font-size: 0.85rem; flex: 1; cursor: pointer;">
+                                    <option value="50,000 BDT">50,000 BDT</option>
+                                    <option value="25,000 BDT">25,000 BDT</option>
+                                    <option value="10,000 BDT">10,000 BDT</option>
+                                    <option value="custom">Custom Prize...</option>
+                                </select>
+                                <input type="text" id="host-custom-prize" placeholder="Amount" value="50,000 BDT" style="display: none; background: #222; color: white; border: 1px solid #444; padding: 0.4rem; border-radius: 5px; font-size: 0.85rem; width: 90px; text-align: center;">
+                            </div>
+                        </div>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 1rem;"><i class="fa-solid fa-clock"></i> ${daysLeftText}</p>
+                    `;
+
+                    const selector = document.getElementById('host-prize-selector');
+                    const customInput = document.getElementById('host-custom-prize');
+                    
+                    selector.addEventListener('change', (e) => {
+                        if (e.target.value === 'custom') {
+                            selector.style.display = 'none';
+                            customInput.style.display = 'block';
+                            customInput.value = '';
+                            customInput.focus();
+                        }
+                    });
+
+                    customInput.addEventListener('blur', () => {
+                        if (customInput.value.trim() === '') {
+                            customInput.style.display = 'none';
+                            selector.style.display = 'block';
+                            selector.value = '50,000 BDT';
+                        }
+                    });
+                }
+            }
+
+            // 5. Update Player Progress Bars dynamically
+            if (maxPlayers) {
+                const total = parseInt(maxPlayers) || 12;
+                const joined = 1; 
+                document.getElementById('dash-player-ratio').textContent = `${joined} / ${total}`;
+                
+                const percent = Math.round((joined / total) * 100);
+                document.getElementById('dash-progress-bar').style.width = `${percent}%`;
+
+                // 6. Calculate Payment amounts dynamically based on real price parameter
+                const totalMatchCost = turfPrice ? parseInt(turfPrice) : 2000; 
+                if (paymentMethod === 'split') {
+                    const amountPaid = Math.round(totalMatchCost / total);
+                    document.getElementById('dash-payment-status').textContent = `${amountPaid} BDT Paid (Split)`;
+                } else {
+                    document.getElementById('dash-payment-status').textContent = `${totalMatchCost} BDT Paid (Full Amount)`;
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

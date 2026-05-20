@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="wide.css" media="screen and (min-width: 769px)">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking & Payment | PitchPoint</title>
+</head>
+<body class="dark-theme">
+    
+    <nav class="navbar">
+      <div class="container">
+        <div id="navlogo">
+          <a href="index.html"><img id="navurl" src="img/taskbar url.jpg"></a>
+        </div>
+        <div class="nav-content">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="turfs.html">Turfs</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <p><a href="_blank" class="user-register">Login</a></p>
+        <p class="border1"></p>
+        <p><a href="_blank" class="user-register usreg2">Sign Up</a></p>
+      </div>
+    </nav>
+
+    <div class="container py-3">
+        <div class="booking-container">
+            <div class="summary-card">
+                <h2>Match Summary</h2>
+                <div class="summary-item">
+                    <label>Match Name</label>
+                    <span id="summary-match-name">Sunday Funday</span>
+                </div>
+                <div class="summary-item">
+                    <label>Match Type</label>
+                    <span id="summary-match-type">Tournament</span>
+                </div>
+                <div class="summary-item">
+                    <label>Selected Turf</label>
+                    <span id="summary-turf-name">Pacific Sports Ground</span>
+                </div>
+                <div class="summary-item">
+                    <label>Player Count</label>
+                    <span id="summary-player-count">12 Players</span>
+                </div>
+            </div>
+
+            <div class="booking-form-box">
+                <h2>Finalize Booking</h2>
+                <form action="dashboard.html" method="GET">
+                    <input type="hidden" id="hidden-matchname" name="matchname" value="Sunday Funday">
+                    <input type="hidden" id="hidden-type" name="type" value="Tournament">
+                    <input type="hidden" id="hidden-turfName" name="turfName" value="Pacific Sports Ground">
+                    <input type="hidden" id="hidden-count" name="count" value="12">
+
+                    <div class="form-group">
+                        <label for="booking-date">Choose Date</label>
+                        <input type="date" id="booking-date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="booking-time">Time Slot</label>
+                        <select id="booking-time" name="time" required>
+                            <option value="">Select a slot</option>
+                            <option>07:00 PM - 08:00 PM</option>
+                            <option>08:00 PM - 09:00 PM</option>
+                            <option>09:00 PM - 10:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="payment-options">
+                        <p>Payment Options</p>
+                        <div class="radio-option">
+                            <input type="radio" name="pay-method" id="single" value="single" checked onclick="document.getElementById('split-calc').style.display='none'">
+                            <label for="single">One Person Pays (Full Amount)</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="pay-method" id="split" value="split" onclick="document.getElementById('split-calc').style.display='block'">
+                            <label for="split">Split Payment</label>
+                        </div>
+
+                        <div id="split-calc" class="split-calculator" style="display:none;">
+                            <p id="split-display-text"><i class="fa-solid fa-calculator"></i> 12 players → <strong>500 BDT each</strong></p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-confirm-booking">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <div>
+          <img src="img/691861687_1547938279996005_2950235680016331440_n.jpg" alt="PitchPoint">
+          <p>Organize Football Matches Without the Chaos</p>
+        </div>
+        <div class="support">
+         <h3>Support</h3>
+          <p><i class="fa-solid fa-envelope"></i> support@pitchpoint.com</p>
+          <p><i class="fa-solid fa-phone"></i> +880 1302-787438</p>
+          <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+        </div>
+        <div class="fix">
+          <h3>Site Links</h3>
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="turfs.html">Turfs</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="onemore">
+          <h2>Become a Turf Partner</h2>
+          <p>List your turf on PitchPoint, receive more bookings, and manage your availability easily.</p>
+          <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+      </div>
+      <div class="fix2">
+          <p>Copyright &copy; 2026 PitchPoint. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            
+            const matchName = params.get('matchname');
+            const matchType = params.get('type');
+            const turfName = params.get('turfName');
+            const players = params.get('count');
+            // Extract the actual selected turf price from the URL parameters
+            const turfPrice = params.get('price'); 
+
+            // 1. Update UI Elements on Summary Card
+            if (matchName) document.getElementById('summary-match-name').textContent = decodeURIComponent(matchName);
+            if (matchType) document.getElementById('summary-match-type').textContent = decodeURIComponent(matchType);
+            if (turfName) document.getElementById('summary-turf-name').textContent = decodeURIComponent(turfName);
+            
+            // 2. Load values into the hidden input fields so they submit seamlessly with the form
+            if (matchName) document.getElementById('hidden-matchname').value = decodeURIComponent(matchName);
+            if (matchType) document.getElementById('hidden-type').value = decodeURIComponent(matchType);
+            if (turfName) document.getElementById('hidden-turfName').value = decodeURIComponent(turfName);
+
+            // 3. Dynamic Calculation using the REAL turf price
+            const totalCost = turfPrice ? parseInt(turfPrice) : 3600; // Fallback to 3600 if missing
+            const totalPlayers = players ? parseInt(players) : 12;
+            
+            document.getElementById('summary-player-count').textContent = `${totalPlayers} Players`;
+            document.getElementById('hidden-count').value = totalPlayers;
+            
+            // Calculate accurate per-person split share
+            const shareCost = Math.round(totalCost / totalPlayers);
+            document.getElementById('split-display-text').innerHTML = `<i class="fa-solid fa-calculator"></i> ${totalPlayers} players → <strong>${shareCost} BDT each</strong>`;
+            
+            // Save total cost into a temporary attribute or form value if needed, 
+            // but we'll pass it to dashboard via URL inputs if required.
+            const form = document.querySelector('form');
+            if (form) {
+                let hiddenPriceInput = document.getElementById('hidden-price');
+                if (!hiddenPriceInput) {
+                    hiddenPriceInput = document.createElement('input');
+                    hiddenPriceInput.type = 'hidden';
+                    hiddenPriceInput.id = 'hidden-price';
+                    hiddenPriceInput.name = 'price';
+                    form.appendChild(hiddenPriceInput);
+                }
+                hiddenPriceInput.value = totalCost;
+            }
+        });
+    </script>
+
+</body>
+</html>

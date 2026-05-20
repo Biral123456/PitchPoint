@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="wide.css" media="screen and (min-width: 769px)">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Turf | PitchPoint</title>
+</head>
+<body class="dark-theme">
+    
+    <nav class="navbar">
+      <div class="container">
+        <div id="navlogo">
+          <a href="index.html"><img id="navurl" src="img/taskbar url.jpg"></a>
+        </div>
+        <div class="nav-content">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="turfs.html" class="current">Turfs</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <p><a href="_blank" class="user-register">Login</a></p>
+        <p class="border1"></p>
+        <p><a href="_blank" class="user-register usreg2">Sign Up</a></p>
+      </div>
+    </nav>
+
+    <header class="page-title py-2">
+        <div class="container" style="display: block; text-align: center;">
+            <h1 style="color: rgb(5, 136, 5); font-size: 2.5rem;">Select a Turf</h1>
+            <p style="color: white;">Choose an available turf for your match or tournament.</p>
+        </div>
+    </header>
+
+    <section id="filters" class="py-1">
+        <div class="container filter-bar" style="display: flex; justify-content: center; gap: 1rem; background: #1a1a1a; padding: 1rem; border-radius: 8px;">
+            <select style="background: #333; color: white; padding: 0.5rem; border-radius: 4px;">
+              <option>Area</option>
+              <option href="#100feet">100 Feet Road</option>
+              <option href="#bashundhara">Bashundhara R/A</option>
+              <option href="#banasree">Banasree</option>
+              <option href="#purbachol">Purbachol</option>
+              <option href="#uttara">Uttara</option>
+              <option href="#mirpur">Mirpur</option>
+            </select>
+            <select style="background: #333; color: white; padding: 0.5rem; border-radius: 4px;"><option>Price Range</option></select>
+            <select style="background: #333; color: white; padding: 0.5rem; border-radius: 4px;"><option>Turf Size</option></select>
+            <button class="btn btn-secondary" style="background: rgb(5, 136, 5); color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Search</button>
+        </div>
+    </section>
+
+    <section id="turf-list" class="py-3">
+        <div class="container">
+            <div class="turf-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="100feet">
+                    <img src="img/Athletes Hub.jpeg" alt="Athletes Hub" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Athlete's Hub</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> 100 Feet Road, Beraid Bridge, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">2750 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 4.4 (136 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Athlete's Hub" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="100feet">
+                    <img src="img/Greenvill Turf.jpeg" alt="Greenvill Futsal" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Greenvill Futsal</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> 100 Feet Road, Madani Avenue, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">5500 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 4.6 (60 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Greenvill Futsal" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="bashundhara">
+                    <img src="img/Pacific Sports Ground.jpeg" alt="Pacific Sports Ground" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Pacific Sports Ground</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Bashundhara, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">2800 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 4.9 (210 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Pacific Sports Ground" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+ 
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="bashundhara">
+                    <img src="img/Sports Grill.jpg" alt="Sports Grill" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Sports Grill</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Bashundhara, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">3000 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 4.7 (150 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Sports Grill" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="banasree">
+                    <img src="img/Turf Republic.webp" alt="Turf Republic" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Turf Republic</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Banasree, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">2000 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 5.0 (11 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Turf Republic" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+                
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="purbachol">
+                    <img src="img/dolphin sports and cafe.webp" alt="Dolphin Sports & Cafe" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Dolphin Sports & Cafe</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Purbachol, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">2300 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 3.9 (39 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Dolphin Sports & Cafe" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="uttara">
+                    <img src="img/galacticos uttara.webp" alt="Galacticos Sports Pavilion- GSP" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Galacticos Sports Pavilion- GSP</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Uttara, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">3500 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 4.5 (82 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Galacticos Sports Pavilion- GSP" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+
+                <div class="turf-card" style="background: #1a1a1a; border-radius: 10px; overflow: hidden; border: 1px solid #333;" id="mirpur">
+                    <img src="img/Offside Mirpur.webp" alt="Offside-Mirpur" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-content" style="padding: 1.5rem; color: white;">
+                        <h3 style="margin-bottom: 0.5rem;">Offside-Mirpur</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Mirpur, Dhaka</p>
+                        <p style="color: rgb(5, 136, 5); font-weight: bold; margin: 0.5rem 0;">3800 BDT / hour</p>
+                        <div class="rating" style="color: #ffcc33; font-size: 0.9rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-star"></i> 4.9 (30 reviews)
+                        </div>
+                        <a href="booking.html" class="btn-primary turf-link" data-venue="Offside-Mirpur" style="display: block; text-align: center; text-decoration: none; background: rgb(5, 136, 5); color: white; padding: 0.8rem; border-radius: 5px; font-weight: bold;">Select Turf</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <div>
+          <img src="img/691861687_1547938279996005_2950235680016331440_n.jpg" alt="PitchPoint">
+          <p>Organize Football Matches Without the Chaos</p>
+        </div>
+        <div class="support">
+         <h3>Support</h3>
+          <p><i class="fa-solid fa-envelope"></i> support@pitchpoint.com</p>
+          <p><i class="fa-solid fa-phone"></i> +880 1302-787438</p>
+          <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+        </div>
+        <div class="fix">
+          <h3>Site Links</h3>
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="turfs.html">Turfs</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="onemore">
+          <h2>Become a Turf Partner</h2>
+          <p>List your turf on PitchPoint, receive more bookings, and manage your availability easily.</p>
+          <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+      </div>
+      <div class="fix2">
+          <p>Copyright &copy; 2026 PitchPoint. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Safety Route: If there is no match data, kick them to setup first
+        if (!urlParams.has('matchname')) {
+            document.querySelectorAll('.turf-link').forEach(link => {
+                link.href = 'matchsetup.html';
+            });
+        } else {
+            // Append all incoming params plus the selected venue name to the final booking link
+            document.querySelectorAll('.turf-link').forEach(link => {
+                const venue = link.getAttribute('data-venue');
+                const nextParams = new URLSearchParams(window.location.search);
+                nextParams.set('turfName', venue);
+                link.href = `booking.html?${nextParams.toString()}`;
+            });
+        }
+    </script>
+</body>
+</html>

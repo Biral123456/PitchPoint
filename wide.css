@@ -1,0 +1,118 @@
+/* ==========================================================================
+   DESKTOP & WIDE SCREEN STYLES (769px and Up)
+   ========================================================================== */
+
+/* --- FIXED DESKTOP NAVBAR FORCE HORIZONTAL --- */
+header.navbar, 
+nav.navbar,
+.navbar {
+    width: 100% !important;
+    display: block !important;
+}
+
+.navbar .container {
+    display: flex !important;
+    flex-direction: row !important; /* Perfect side-by-side alignment */
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+}
+
+.navbar .nav-content {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 2.5rem !important;
+    width: auto !important;
+}
+
+.navbar .nav-content ul,
+.navbar ul,
+.nav-content ul {
+    display: flex !important;
+    flex-direction: row !important; /* Runs page links left-to-right */
+    align-items: center !important;
+    gap: 2rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.navbar .nav-content ul li,
+.nav-content ul li {
+    display: inline-block !important;
+    width: auto !important;
+}
+
+.navbar .nav-content div,
+.nav-content div {
+    display: flex !important;
+    flex-direction: row !important; /* Keeps right buttons adjacent */
+    align-items: center !important;
+    gap: 1.5rem !important;
+    width: auto !important;
+}
+
+.navbar .border1,
+.border1 {
+    display: inline-block !important;
+    visibility: visible !important;
+    height: 20px !important;
+    width: 1px !important;
+    background-color: #444; /* Standard visible gray line */
+}
+
+/* --- DESKTOP GRID SYSTEMS --- */
+.dashboard-grid {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+    gap: 2rem !important;
+    align-items: start !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.booking-container {
+    display: grid !important;
+    grid-template-columns: 3fr 2fr !important;
+    gap: 2.5rem !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1.active-dash-title {
+    padding-left: 1.5rem !important;
+    font-size: 2.5rem !important;
+    text-align: left !important;
+}
+
+/* Maintain clean inner horizontal layout bars */
+.dash-card .dash-row-item {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+/* --- FIXED DESKTOP FOOTER AND COLUMN GAP CODES --- */
+#main-footer .footer-container {
+    display: grid !important;
+    grid-template-columns: 1.5fr 1.8fr 1fr 1.5fr !important; /* Expanded center to protect email width */
+    gap: 2.5rem !important;
+    align-items: start !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem 1.5rem !important;
+}
+
+#main-footer .fix2 {
+    background-color: #333333 !important;
+    padding: 1rem 0 !important;
+    margin-top: 1.3rem !important; /* Keeps the perfect footer buffer spacing */
+    width: 100% !important;
+    display: block !important;
+}
